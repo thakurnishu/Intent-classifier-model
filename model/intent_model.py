@@ -7,4 +7,5 @@ class IntentModel:
     def predict(self, text):
         pred = self.pipeline.predict([text])[0]
         probs = self.pipeline.predict_proba([text])[0]
+        print(probs)
         return {"intent": pred}

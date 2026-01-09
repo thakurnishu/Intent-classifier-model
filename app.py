@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from model.intent_model import IntentModel
-import os
 
 app = Flask(__name__)
 model = IntentModel()
